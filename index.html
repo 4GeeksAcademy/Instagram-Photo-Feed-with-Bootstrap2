@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9a15eb9f72.js" crossorigin="anonymous"></script>
+    <title>08 Bootstrap Forms</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="navbar-brand fa-brands fa-instagram col-" href="">Instagram</a>
+
+
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Create a
+                new
+                post</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+
+
+
+                <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn-success" data-toggle="modal" data-target="#exampleModal">
+                        <input class="form-control mr-sm-2 bg-success text-white" type="search"
+                            placeholder="create a new button" aria-label="Search">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelled by="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3">add the caption of yur post here</textarea>
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="buttondiv">
+
+
+                                        <button class="btn btn-outline-secondary p-0 border-0">
+                                            <i class="fa-solid fa-camera"></i>
+                                        </button>
+
+                                        <button class="btn btn-outline-secondary p-0 border-0">
+                                            <i class="fa-solid fa-location-pin"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary d-flex justify-content-fro"
+                                        data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown">
+
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">profile</a>
+                            <a class="dropdown-item" href="#">accesibility</a>
+                            <a class="dropdown-item" href="#">privacy and data</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+
+        <ul class="nav nav-pills mb-3 container d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fa-solid fa-table"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fa-sharp fa-solid fa-square-full"></i></button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://live.staticflickr.com/4028/4385814522_2da87c67fa_b.jpg" class="img-fluid"
+                            alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://people.com/thmb/uYFMaFvzv4P9nLLtfinTPyGG2mQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/FC-Koln-supporters-fight-Nice-supporters-soccer-game-9922-b44b0af93b474eaba704acd2187ec7a4.jpg"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNarydVCg9gDVhSGfN0M1diolNyuRqHfVOjuaDjLaagg&s"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9zIP2yp46IZ0US6qqsL8rcmN4TdQXNrxnp5d5ZpcIg&s"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                class="img-fluid" alt="..." style="height: 200px;">
+                        </div>
+                        <div class="col">
+                            <img src="https://live.staticflickr.com/4028/4385814522_2da87c67fa_b.jpg" class="img-fluid"
+                                alt="..." style="height: 200px;">
+                        </div>
+                        <div class="col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                class="img-fluid" alt="..." style="height: 200px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://people.com/thmb/uYFMaFvzv4P9nLLtfinTPyGG2mQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/FC-Koln-supporters-fight-Nice-supporters-soccer-game-9922-b44b0af93b474eaba704acd2187ec7a4.jpg"
+                                class="img-fluid" alt="..." style="height: 200px;">
+                        </div>
+                        <div class="col">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNarydVCg9gDVhSGfN0M1diolNyuRqHfVOjuaDjLaagg&s"
+                                class="img-fluid" alt="..." style="height: 200px;">
+                        </div>
+                        <div class="col">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9zIP2yp46IZ0US6qqsL8rcmN4TdQXNrxnp5d5ZpcIg&s"
+                                class="img-fluid" alt="..." style="height: 200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://live.staticflickr.com/4028/4385814522_2da87c67fa_b.jpg" class="img-fluid"
+                            alt="..." style="height: 200px;">
+                    </div>
+                    <div class="col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                            class="img-fluid" alt="..." style="height: 200px;">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-header">
+                                <div class="text-left">Deerfield beach!</div>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
+                                <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
+
+                                <div class="position-absolute top-0 end-0 m-2 text-muted">
+                                    1/24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-header">
+                                <div class="text-left">The beach!</div>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
+                                <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
+
+                                <div class="position-absolute top-0 end-0 m-2 text-muted">
+                                    1/24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <div class="card-header">
+                                    <div class="text-left">The beach!</div>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                        class="card-img-top img-test" alt="...">
+                                    <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
+                                    <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
+
+                                    <div class="position-absolute top-0 end-0 m-2 text-muted">
+                                        1/24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

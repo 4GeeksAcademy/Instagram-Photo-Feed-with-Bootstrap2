@@ -1,0 +1,10 @@
+.img-test {
+    height: 100%;
+    width: 100%;
+}
+.buttondiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 10px;
+}
