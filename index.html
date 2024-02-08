@@ -43,23 +43,16 @@
 
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Create a
-                new
-                post</button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-gear"></i>
-            </button>
+            
+            
 
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
 
 
 
-                <form class="form-inline my-2 my-lg-0">
+                
                     <button type="button" class="btn-success" data-toggle="modal" data-target="#exampleModal">
-                        <input class="form-control mr-sm-2 bg-success text-white" type="search"
-                            placeholder="create a new button" aria-label="Search">
+                       create a new post 
                     </button>
 
                     <!-- Modal -->
@@ -139,13 +132,9 @@
             </li>
 
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-
-
-
-
-            <div class="tab-pane fade show active d-flex justify-content-center" id="pills-home" role="tabpanel"
-                aria-labelledby="pills-home-tab">
+        <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+            <!-- homeview -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <table>
                     <tr>
                         <td>
@@ -183,69 +172,21 @@
                             <img src="https://live.staticflickr.com/4028/4385814522_2da87c67fa_b.jpg">
                         </td>
                     </tr>
-
-
-
                 </table>
             </div>
-
-        </div>
-
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-            <div class="row justify-content-center d-flex align-items-center">
-                <div class="col">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <div class="card-header">
-                            <div class="text-left">Deerfield beach!</div>
-                        </div>
-                        <div class="card-body text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
-                                class="card-img-top" alt="...">
-                            <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
-                            <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
-
-                            <div class="position-absolute top-0 end-0 m-2 text-muted">
-                                1/24
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center">
-                <div class="col">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <div class="card-header">
-                            <div class="text-left">The beach!</div>
-                        </div>
-                        <div class="card-body text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
-                                class="card-img-top" alt="...">
-                            <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
-                            <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
-
-                            <div class="position-absolute top-0 end-0 m-2 text-muted">
-                                1/24
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="row justify-content-center align-items-center">
+            <!-- profile view -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row justify-content-center d-flex align-items-center">
                     <div class="col">
                         <div class="card mx-auto" style="width: 18rem;">
                             <div class="card-header">
-                                <div class="text-left">The beach!</div>
+                                <div class="text-left">Deerfield beach!</div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
-                                    class="card-img-top img-test" alt="...">
+                                    class="card-img-top" alt="...">
                                 <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
                                 <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
-
                                 <div class="position-absolute top-0 end-0 m-2 text-muted">
                                     1/24
                                 </div>
@@ -254,11 +195,46 @@
                     </div>
                 </div>
 
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-header">
+                                <div class="text-left">The beach!</div>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
+                                <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
+                                <div class="position-absolute top-0 end-0 m-2 text-muted">
+                                    1/24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-
+                <div class="row justify-content-center">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <div class="card-header">
+                                    <div class="text-left">The beach!</div>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Deerfield_Resort_Photo_D_Ramey_Logan.jpg/640px-Deerfield_Resort_Photo_D_Ramey_Logan.jpg"
+                                        class="card-img-top img-test" alt="...">
+                                    <h5 class="card-title  d-flex justify-content-front">999 likes</h5>
+                                    <p class="card-text d-flex justify-content-front">picture of the beautiful beach</p>
+                                    <div class="position-absolute top-0 end-0 m-2 text-muted">
+                                        1/24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
 
 
